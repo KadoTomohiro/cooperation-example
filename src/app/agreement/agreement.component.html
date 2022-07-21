@@ -1,0 +1,19 @@
+<header>
+  <h2>契約登録</h2>
+</header>
+
+<form [formGroup]="form">
+  <label>
+    代理店
+    <span>{{form.value.agency | emptyHyphen}}</span>
+  </label>
+  <label>
+    契約名
+    <input type="text" formControlName="name">
+  </label>
+  <label>
+    価格
+    <input type="number" formControlName="price">
+  </label>
+  <button type="button" (click)="submit()">登録</button>
+</form>

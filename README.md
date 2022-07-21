@@ -1,27 +1,32 @@
 # CooperationExample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+別システムからの情報連携検証
 
-## Development server
+## 起動
+```
+npm run start
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```
+npm run serve:api
+```
 
-## Code scaffolding
+```
+npm run serve:sender
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 手順
 
-## Build
+### 自システム内での操作
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. [http://localhost:4200](http://localhost:4200)にアクセス
+2. 「新規契約登録」クリック
+3. フォームを入力して「登録」
 
-## Running unit tests
+### 他システムからの操作
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. [http://localhost:3000](http://localhost:3000)にアクセス
+2. 「代理店名」を入力
+3. 「Submit」クリック
+4. 新規ウインドウでフォームを入力して「登録」
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

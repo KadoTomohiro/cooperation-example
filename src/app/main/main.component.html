@@ -1,0 +1,20 @@
+<header>
+  <h2>メニュー</h2>
+</header>
+
+<a routerLink="/agreement">新規契約登録</a>
+
+<ul>
+  <li>
+    <span class="code">契約番号</span>
+    <span class="name">契約名</span>
+    <span class="price">価格</span>
+    <span class="agency">代理店</span>
+  </li>
+  <li *ngFor="let agreement of agreements | async">
+    <span class="code">{{agreement.code }}</span>
+    <span class="name">{{agreement.name}}</span>
+    <span class="price">{{agreement.price}}</span>
+    <span class="agency">{{agreement.agency | emptyHyphen}}</span>
+  </li>
+</ul>

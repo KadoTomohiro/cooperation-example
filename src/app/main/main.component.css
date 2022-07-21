@@ -1,0 +1,41 @@
+ul {
+  list-style: none;
+  border: 1px solid black;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+li  * {
+  padding: 0.2em 0.5em;
+}
+
+.code {
+  flex: 2em 1 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.name {
+  flex: 5em 1 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.price {
+  flex: 5em 1 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.agency {
+  flex: 5em 1 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+
